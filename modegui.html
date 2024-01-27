@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Mode GUI</title>
+    <meta charset="UTF-8">
+    
+</head>
+<body>
+
+    <header class="page-hd"><figure>
+        <a href="https://mycy.cyu.fr/"><img src="images/Universite-de-Cergy-Pontoise.jpg" alt="logo de l'university de cergy" width="200" height="100"></a>
+        </figure>
+        <nav class="navbar" ><ul>
+            <li><a href="index.html">L'accueil</a></li>
+            <li><a href="diagram.html">Diagramme Use-cases et classes</a> </li>
+            <li><a href="modeconsole.html">Mode console</a></li>
+            <li class="mode-gui">
+            <a href="modegui.html">Mode graphique</a>
+            <ul>
+                <li><a href="modegui.html#HomePage">Home page </a> </li>
+                <li><a href="modegui.html#MainPage">Main page </a> </li>
+                <li><a href="modegui.html#ResultPage">ResaultPage </a> </li>
+                <li><a href="modegui.html#EditeurCode">Editeure de code</a> </li>
+           </ul>
+         </li>
+            <li><a href="niveau-dabourtissement.html#container1">Niveau d'abourtissement et Conclusion</a> </li>
+            
+        
+        </ul>
+    </nav>
+    </header>
+<main>
+    <section id="container5">
+        <h2>Mode Graphique</h2>
+        <p>Cette section abordera les détails de la version graphique en utilisant la bibliothèque Swing. Nous discuterons des composants d'interface, des interactions utilisateur, et des améliorations visuelles apportées à l'expérience utilisateur.
+           <br> java -jar GUI.jar: Cette commande permet de lancer l'interface graphique à partir de console.  
+        </p>
+        <h3 id="HomePage">HomePage</h3>
+        <p>La classe HomePage représente le point d'entrée visuel de notre application. Les utilisateurs peuvent ajouter un dossier à analyser en utilisant un bouton dédié. Une fois sélectionné, la classe MainPage prend le relais pour afficher l'arborescence complète du répertoire choisi.</p>
+        <figure>
+            <img src="images/IMG6.png" alt="HomePage of GUI">
+            <figcaption> The Home Page</figcaption>
+        </figure>
+        <h3 id="MainPage">MainPage</h3>
+        <p>La méthode updateTreeModel() de la classe MainPage assure l'affichage de l'arborescence du répertoire sélectionné, incluant les fichiers Python à analyser. Des filtres intuitifs permettent aux utilisateurs de choisir le type d'analyse à appliquer aux fichiers, avec des résultats statistiques détaillés pour le répertoire analysé. </p>
+        <figure>
+            <img src="images/IMG7.png" alt="MainPage" width="600" >
+            <figcaption>The Main Page</figcaption>
+        </figure>
+        <h3 id="ResultPage">Result Page</h3>
+        <p>La classe ResultPage offre une vue détaillée des résultats des analyses effectuées sur les fichiers Python du répertoire. Les informations fournies comprennent les annotations detype détectées, et d'autres analyses liées à la qualité du code.</p>
+        <figure>
+            <img src="images/IMG8.png" alt="ResultPage">
+            <figcaption>The Result Page</figcaption>
+
+        </figure>
+        <h3 id="EditeurCode">Editeur de Code</h3>
+        <p>Pour une manipulation plus approfondie, la classe PythonEditorFrame fournit un environnement dédié à l'édition des fichiers Python. Les utilisateurs peuvent effectuer des modifications directes grâce à cette interface, offrant une flexibilité accrue dans le processus de développement.</p>
+        <figure>
+            <img src="images/IMG9.png" alt="EditerFile">
+            <figcaption>Edit File</figcaption>
+        </figure>
+    </section>
+</main>
+<footer class="footer">
+    <div>
+   <p> Université Cy Cergy Paris </p> 
+   <p>Contacte : </p>
+    <ul>
+        <h4>Email:</h4>
+         ferielboubker04@gmail.com
+         boudjemadyhia@gmail.com
+        <h4>Instagram :</h4>
+        <a href="https://www.instagram.com/feryel___boubeker"><img src="images/instagram.png" alt="insta icon" width="20" height="20"></a>
+            <a href="https://www.instagram.com/_dyhia_bdj_?igsh=MXBrZjcwdnQxMDA%3D&utm_source=qr"><img src="images/instagram.png" alt="insta icon" width="20" height="20"></a>
+        
+    </ul>
+   </div>
+</footer>
+</body>

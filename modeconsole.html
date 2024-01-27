@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mode Console</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header class="page-hd"><figure>
+        <a href="https://mycy.cyu.fr/"><img src="images/Universite-de-Cergy-Pontoise.jpg" alt="logo de l'university de cergy" width="200" height="100"></a>
+        </figure>
+        <nav class="navbar"><ul>
+            <li><a href="index.html">L'accueil</a></li>
+            <li><a href="diagram.html">Diagramme Use-cases et classes</a> </li>
+            <li><a href="modeconsole.html">Mode console</a></li>
+            <li class="mode-gui">
+            <a href="modegui.html">Mode graphique</a>
+            <ul>
+                <li><a href="modegui.html#HomePage">Home page </a> </li>
+                <li><a href="modegui.html#MainPage">Main page </a> </li>
+                <li><a href="modegui.html#ResultPage">ResaultPage </a> </li>
+                <li><a href="modegui.html#EditeurCode">Editeure de code</a> </li>
+           </ul>
+         </li>
+            <li><a href="niveau-dabourtissement.html#container1">Niveau d'abourtissement et Conclusion</a> </li>
+            
+        
+        </ul>
+    </nav>
+    </header>
+    <main>
+    <section id="container4">
+
+        <h2>Mode Console</h2>
+        <p>Cette section explore les fonctionnalités clés de notre mode console, détaillant les différentes options de ligne de commande, les actions disponibles et la manière dont notre application fournit des informations utiles aux utilisateurs. Nous mettons en lumière les principaux scénarios d'utilisation de mode console, démontrant comment elle facilite la gestion des fichiers Python, la détection d'annotations de type et l'évaluation de la qualité du code.</p>
+        <p>Les paramètres attendus en ligne de commande sont le nom du dossier ou du fichier à explorer, avec des options pour spécifier le type d'entrée et les actions souhaitées.</p>
+        <figure>
+            <img src="images/IMG3.png" alt="Options">
+            <figcaption>Options -Mode Console</figcaption>
+        </figure>
+        <h3>Exemples d'utilisations :</h3>
+        <p>java -jar cli.jar -d ./:  Liste tous les fichiers Python à partir du dossier spécifié par la classe Listfilepy.</p>
+        <figure>
+            <img src="images/IMG4.png" alt="listing files.py">
+            <figcaption>listing files.py</figcaption>
+        </figure>
+        <p>java -jar cli.jar -f ./add.py --type: Analyser des fichiers Python pour détecter les annotations de type par la méthode runMypy().</p>
+        <p>java -jar cli.jar -f ./add.py --pydoc: Identifier les fonctions sans commentaires "PyDoc" dans les fichiers Python par la méthode checkpydoc().</p>
+        <p>java -jar cli.jar -f ./add.py –head:  Vérifier la présence des commentaires d'en-tête par la méthode hascommentheader().</p>
+        <figure>
+            <img src="images/IMG5.png" alt="CMD results">
+            <figcaption>CMD results</figcaption>
+        </figure>
+        <p>java -jar cli.jar -f ./add.py --comment: Ajouter les commentaires "PyDoc" dans les fichiers Python.</p>
+        <p>java -jar cli.jar -f ./add.py –subtf8: Ajouter les commentaires d'en-tête dans les fichiers Python.</p>
+    
+    
+    
+    </section>
+
+</main>
+    <footer class="footer">
+        <div>
+       <p> Université Cy Cergy Paris </p> 
+       <p>Contacte : </p>
+        <ul>
+            <h4>Email:</h4>
+             ferielboubker04@gmail.com
+             boudjemadyhia@gmail.com
+            <h4>Instagram :</h4>
+            <a href="https://www.instagram.com/feryel___boubeker"><img src="images/instagram.png" alt="insta icon" width="20" height="20"></a>
+                <a href="https://www.instagram.com/_dyhia_bdj_?igsh=MXBrZjcwdnQxMDA%3D&utm_source=qr"><img src="images/instagram.png" alt="insta icon" width="20" height="20"></a>
+            
+        </ul>
+       </div>
+    </footer>
+</body>
